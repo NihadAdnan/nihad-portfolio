@@ -9,7 +9,6 @@ import {
 import { MdEmail } from "react-icons/md";
 import { useState } from "react";
 import { Link } from "react-scroll";
-import RESUME from "../assets/resume.png";
 import pdf from "../assets/Nihad_Adnan_Resume.pdf";
 
 export default function Navbar() {
@@ -120,7 +119,7 @@ export default function Navbar() {
 
         <div className="hidden md:flex fixed  flex-col top-[35%] left-0">
           <ul>
-            <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#032174]">
+            <li className="flex w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#032174]">
               <a
                 className="flex justify-between items-center w-full text-neutral-300"
                 href="https://www.linkedin.com/in/nihad-adnan-shah-5b99611b8/"
@@ -129,7 +128,7 @@ export default function Navbar() {
                 LinkedIn <FaLinkedin size={30} />
               </a>
             </li>
-            <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3A5A40]">
+            <li className="flex w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#3A5A40]">
               <a
                 className="flex justify-between items-center w-full text-neutral-300"
                 href="https://github.com/NihadAdnan"
@@ -138,7 +137,7 @@ export default function Navbar() {
                 GitHub <FaGithubSquare size={30} />
               </a>
             </li>
-            <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#370617]">
+            <li className="flex w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#370617]">
               <a
                 className="flex justify-between items-center w-full text-neutral-300"
                 href={`mailto:nihad.adnan.shah@g.bracu.bd?subject=&body=`}
@@ -146,9 +145,13 @@ export default function Navbar() {
               >
                 E-Mail <MdEmail size={30} />
               </a>
-            </li>
+            </li> 
+            </ul>
+            </div>
 
-            <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#495057]">
+            <div className="flex fixed flex-col top-[3%] right-[10%] md:flex md:fixed  md:flex-col md:top-[59%] md:left-0 ">
+            <ul>
+            <li className=" w-[140px] h-[40px] flex items-center ml-[-100px] bg-[#495057] hover:scale-110 duration-500 rounded md:flex md:w-[160px] md:h-[60px] md:justify-between md:hover:ml-[-10px] md:duration-300 md:bg-[#495057]">
               <a
                 href={pdf}
                 target="_blank"
@@ -158,8 +161,15 @@ export default function Navbar() {
                 Resume <FaUserTie size={30} />
               </a>
             </li>
-          </ul>
-        </div>
+            </ul>
+
+            </div>
+
+
+        
+            
+          
+      
       </div>
     </div>
   );
