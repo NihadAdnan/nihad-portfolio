@@ -30,30 +30,30 @@ export default function Navbar() {
         </Link>
 
         {/* Menu */}
-        <ul className="hidden md:flex">
+        <ul className="hidden md:flex text-xl">
           <li>
             <Link to="home" smooth={true} duration={500}>
-              Home
+              <p className="hover:scale-125 duration-300">Home</p>
             </Link>
           </li>
           <li>
             <Link to="about" smooth={true} duration={500}>
-              About
+            <p className="hover:scale-125 duration-300">About</p>
             </Link>
           </li>
           <li>
             <Link to="skills" smooth={true} duration={500}>
-              Skills
+            <p className="hover:scale-125 duration-300">Skills</p>
             </Link>
           </li>
           <li>
             <Link to="projects" smooth={true} duration={500}>
-              Projects
+            <p className="hover:scale-125 duration-300">Projects</p>
             </Link>
           </li>
           <li>
             <Link to="contact" smooth={true} duration={500}>
-              Contact
+            <p className="hover:scale-125 duration-300">Contact</p>
             </Link>
           </li>
         </ul>
@@ -146,12 +146,7 @@ export default function Navbar() {
                 E-Mail <MdEmail size={30} />
               </a>
             </li> 
-            </ul>
-            </div>
-
-            <div className="flex fixed flex-col top-[3%] right-[10%] md:flex md:fixed  md:flex-col md:top-[59%] md:left-0 ">
-            <ul>
-            <li className=" w-[140px] h-[40px] flex items-center ml-[-100px] bg-[#495057] hover:scale-110 duration-500 rounded md:flex md:w-[160px] md:h-[60px] md:justify-between md:hover:ml-[-10px] md:duration-300 md:bg-[#495057]">
+            <li className="flex w-[160px] h-[60px] justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#495057]">
               <a
                 href={pdf}
                 target="_blank"
@@ -162,13 +157,7 @@ export default function Navbar() {
               </a>
             </li>
             </ul>
-
             </div>
-
-
-        
-            
-          
       
       </div>
     </div>
