@@ -1,6 +1,7 @@
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight,FaUserTie } from "react-icons/fa";
 import { Link } from 'react-scroll'
 import { useState, useEffect } from 'react';
+import pdf from "../assets/Nihad_Adnan_Resume.pdf";
 
 export default function Home() {
   const Typewriter = ({ text }) => {
@@ -35,13 +36,31 @@ export default function Home() {
             </h3>
             <p className='text-[#989898] py-5 max-w-[700px] text-lg font-semibold'>As a passionate full-stack web developer immersed in MERN stack technologies, I harbor a profound interest in the realm of machine learning.</p>
             <div>
-                <Link to='projects' smooth={true} duration={700}>
+
+          <div className="flex flex-col gap-3">
+
+          <Link to='projects' smooth={true} duration={700}>
                 <button className='text-[#CFCFCF] group text-xl border-2 px-6 py-6 my-2 font-bold flex items-center hover:bg-[#FFD60A]
              hover:border-[#FFD60A]
              hover:text-black font-bold'>View Projects
                 <span className='group-hover:rotate-90 duration-300'><FaArrowRight className='ml-3'/></span>
                 </button>
                 </Link>
+
+                <a href={pdf} target="_blank">
+                <button className='text-[#CFCFCF] group text-xl border-2 px-6 py-6 my-2 font-bold flex items-center hover:bg-[#FFD60A]
+             hover:border-[#FFD60A]
+             hover:text-black font-bold md:hidden'>Resume
+                <span><FaUserTie className='ml-3'/></span>
+                </button>
+                </a>          
+             </div>
+  
+
+            
+
+  
+          
               
             </div>
         </div>
